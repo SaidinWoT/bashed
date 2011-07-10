@@ -7,4 +7,4 @@ do
 	let "day += 1"
 done < .var.temp
 feh -D 3 .shirt[0-6].png
-rm .shirt[0-6].png
+rm .shirt[0-6].png .var.temp
