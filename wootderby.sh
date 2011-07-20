@@ -1,5 +1,5 @@
 #! /bin/bash
-curl -s http://shirt.woot.com/Derby/Default.aspx?sort=votes | grep "Tier2EntryRepeater_ctl00_._StatusOverlayDiv" | sed "s:.*39;\(.*\)&.*:\1:" > .var.temp
+curl -s http://shirt.woot.com/Derby/Default.aspx?sort=votes | grep "Tier2.*OverlayDiv" | sed "s:.*9;\(.*\)&.*:\1:" > .var.temp
 num=0
 while read line
 do
